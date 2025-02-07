@@ -1,0 +1,412 @@
+.about_us {
+
+height: 100vh;
+
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow: scroll;
+
+}
+
+.about_us .about_us_content {
+
+background-color: var(--primary-color);
+
+padding-inline: 10px;
+width: 100%;
+
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+align-items: center;
+position: relative;
+
+
+}
+
+
+
+.about_us .about_us_content .section {
+
+    padding-block: 5px;
+    max-width: var(--web-max-width);
+    width: 100%;
+    padding-inline: 10px;
+    z-index: 1;
+
+
+}
+
+.about_us .about_us_content .section.one {
+
+display: flex;
+flex-direction: row;
+padding-bottom: 50px
+
+    
+}
+
+.about_us .about_us_content .section.one .story_row,
+.about_us .about_us_content .section.one .our_team_logo_row
+{
+
+    flex: 1;
+    margin-left: 40px;
+
+        
+    }
+
+.about_us .about_us_content .section.one .story_row {
+
+
+    
+}
+
+.about_us .about_us_content .section.one .story_row .story_title {
+
+
+margin-top: 50px;
+width: 100%;
+display: flex;
+
+}
+
+.about_us .about_us_content .section.one .story_row .story_title p {
+
+ 
+    padding-block: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    
+    }
+
+
+.about_us .about_us_content .section.one .story_row  .image_container{
+
+
+width: 100%;
+height: 250px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-block: 10px;
+display: none;
+
+}
+
+.about_us .about_us_content .section.one .story_row  .image_container img{
+
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    
+    }
+
+.about_us .about_us_content .section.one .story_row .description {
+
+
+margin-top: 50px;
+width: 100%;
+
+display: flex;
+padding-block: 10px;
+
+}
+
+.about_us .about_us_content .section.one .story_row .description p {
+
+
+
+max-width: 80%;
+line-height: 30px;
+}
+
+.about_us .about_us_content .section.one .story_row .learn_more_button_container {
+
+
+width: 100%;
+display: flex;
+margin-top: 30px;
+}
+
+
+.about_us .about_us_content .section.one .story_row .learn_more_button_container .button {
+
+
+padding: 10px;
+font-size: 18px;
+border-radius: 5px;
+border: 1px solid black;
+
+}
+
+
+.about_us .about_us_content .section.one .our_team_logo_row {
+
+
+
+}
+
+.about_us .about_us_content .section.one .our_team_logo_row {
+
+display: flex;
+margin-top: 50px;
+
+}
+
+.about_us .about_us_content .section.one .our_team_logo_row .image_container {
+
+
+width: 350px;
+height: 350px;
+margin-left: 20px;
+}
+
+.about_us .about_us_content .section.one .our_team_logo_row .image_container img {
+
+width: 100%;
+height: 100%;
+object-fit: contain;
+
+}
+
+
+.about_us .about_us_content .section.two {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: var(--web-max-width);
+width: 100%;
+
+gap: 10px;
+border-top: 1px solid;
+
+}
+
+.mission_values_title {
+
+
+padding-block: 10px;
+font-size: 25px;
+font-weight: bold;
+margin-top: 20px;
+
+}
+
+.mission_values_description {
+
+
+
+display: flex;
+flex-direction: row;
+margin-top: 50px;
+
+}
+
+.mission_values_description .image, .description {
+
+padding-inline: 10px;
+
+}
+
+.mission_values_description .image {
+
+width: 400px;
+height: 500px;
+
+
+
+}
+
+.mission_values_description .image img {
+
+width: 100%;
+height: 100%;
+object-fit: contain;
+
+}
+
+
+.mission_values_description .description {
+
+
+display: flex;
+flex-direction: column;
+padding-block: 10px;
+
+gap: 10px;
+
+
+}
+
+.mission_values_description .description p.mission, p.values {
+
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+    }
+
+
+.mission_values_description .description p {
+
+max-width: 500px;
+
+line-height: 22px;
+
+}
+
+.about_us .about_us_content .section.four {
+
+
+padding-inline: 10px;
+padding-inline: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px;
+border-top: 1px solid black;
+
+padding-bottom: auto;
+
+
+}
+
+
+
+.about_us .about_us_content .section.four .title {
+
+
+margin-top: 20px;
+
+font-size: 25px;
+padding-inline: 10px;
+font-weight: bold;
+
+display: flex;
+justify-content: center
+
+}
+
+.about_us .about_us_content .section.four .title p {
+
+
+
+}
+
+.about_us .about_us_content .section.four .image {
+
+
+margin: 50px;
+width: 600px;
+height: 250px;
+
+}
+
+.about_us .about_us_content .section.four .image img {
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+
+.about_us .about_us_content .section.four .description {
+
+
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 200px;
+
+}
+
+
+.about_us .about_us_content .section.four .description p {
+
+max-width: 70%;
+width: 100%;
+
+}
+
+@media (max-width: 960px) {
+
+.about_us .about_us_content .section.one {
+
+
+flex-direction: column;
+
+    
+}
+
+.about_us .about_us_content .section.one .story_row {
+
+
+
+}
+
+.about_us .about_us_content .section.one .story_row .story_title {
+
+    justify-content: center;
+    
+    }
+
+.about_us .about_us_content .section.one .story_row .description {
+
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.about_us .about_us_content .section.one .story_row .description p {
+
+    text-align: center;
+
+}
+
+
+
+.about_us .about_us_content .section.one .our_team_logo_row {
+
+
+display: none;
+
+}
+
+.about_us .about_us_content .section.one .story_row .learn_more_button_container {
+
+    justify-content: center;
+}
+
+.about_us .about_us_content .section.one .story_row  .image_container {
+
+    display: flex;
+
+}
+
+.about_us .about_us_content .section.one .story_row,
+.about_us .about_us_content .section.one .our_team_logo_row {
+
+margin-left: 0px;
+
+}
+
+.mission_values_description {
+
+flex-direction: column;
+    
+}
+
+.mission_values_description .image {
+
+width: 100%;
+
+}
+
+}

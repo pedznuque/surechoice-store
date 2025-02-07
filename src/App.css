@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--default-font-family);
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-size: 14px;
+  overflow: hidden;
+  
+}
+
+:root {
+  /*Color Palettes*/
+
+  --primary-color: rgb(255, 255, 255);
+  /*Navbar*/
+
+  --secondary-color: #c4c4c4;
+  /*body*/
+
+  --tertiary-color: black;
+
+  /*Font colors*/
+  --white-color: white;
+  --black-color: rgb(0, 0, 0);
+
+  /*Font Style*/
+  --default-font-family: "Roboto", serif;
+  --brand-font-family: "Fjalla One", serif;
+
+  /*Font Sizing*/
+
+  --default-font-size: 16px;
+
+  /*Navbar Padding block*/
+  --navbar-padding-block: 10px;
+
+  /*web max width*/
+  --web-max-width: 1366px;
+}

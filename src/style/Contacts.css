@@ -1,0 +1,417 @@
+.contacts {
+
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow: scroll;
+
+
+}
+
+
+.contacts_content {
+
+background-color: var(--primary-color);
+
+
+width: 100%;
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+gap: 5px;
+padding-block: 10px;
+
+}
+
+
+.contacts .section {
+
+
+width: 100%;
+max-width: var(--web-max-width);
+
+padding-inline: 10px;
+
+
+}
+
+.contacts .section.one {
+
+display: flex;
+flex-direction: column;
+
+gap: 20px;
+
+
+}
+
+.contacts .section.one .contact_title {
+
+
+font-size: 20px;
+margin-top: 20px;
+font-weight: bold;
+
+}
+
+.contacts .contact_content {
+
+
+width: 100%;
+
+
+}
+
+
+.contacts .section.one .contact_description {
+
+display: flex;
+justify-content: center;
+margin-top: 20px;
+
+}
+
+
+.contacts .section.one .contact_description p {
+
+max-width: 60%;
+text-align: center;
+font-weight: bold;
+
+}
+
+.contacts .why_us_container {
+
+
+
+display: flex;
+flex-direction: row;
+margin-top: 20px;
+gap: 50px;
+
+justify-content: center;
+
+}
+
+
+.contacts .why_us_container .content {
+
+
+width: 160px;
+height: 170px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+
+.contacts .why_us_container .content img {
+
+width: 40%;
+height: 50%;
+object-fit: contain;
+
+
+}
+
+
+.contacts .why_us_container .content .title {
+
+
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;   
+margin-top: 5px; 
+
+}
+
+.contacts .why_us_container .content .title p {
+
+
+padding-inline: 10px;
+padding-block: 2px;
+font-weight: bold;
+
+text-align: center;
+
+}
+
+.contacts .why_us_container .content .content_description {
+
+
+width: 100%;
+height: 100%;
+
+display: flex;
+margin-top: 5px;
+justify-content: center;
+
+}
+
+
+.contacts .why_us_container .content .content_description p {
+
+
+
+text-align: center;
+max-width: 90%;
+
+}
+
+.contacts .response_time {
+
+
+display: flex;
+justify-content: center;
+
+}
+
+
+.contacts .response_time p {
+
+max-width: 60%;
+text-align: center;
+
+}
+
+.contacts .cta  {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.contacts .cta  p {
+
+max-width: 60%;
+font-weight: bold;
+text-align: center;
+    
+}
+
+
+.contacts .section.two {
+
+padding-block: 10px;
+border-block: 1px solid black;
+margin-top: 30px;
+display: flex;
+justify-content: center;
+padding-inline: 10px;
+
+}
+
+.contacts .section.two .contact_no_container {
+
+
+display: flex;
+flex-direction: row;
+
+gap: 20px;
+
+
+}
+
+.contacts .section.two .contact_no_container .contact_placeholder {
+
+
+
+
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 10px;
+padding-block: 10px;
+font-weight: bold;
+text-align: center;
+
+}
+
+.contacts .section.two .contact_no_container .contact_placeholder img {
+
+width: 30px;
+
+}
+
+
+.contacts .section.three {
+
+margin-top: 20px;
+
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding-bottom: 100px;
+
+}
+
+.contacts .section.three .socmed {
+
+
+
+}
+
+.contacts .section.three .socmed.title {
+
+
+display: flex;
+justify-content: flex-start;
+margin-top: 20px;
+}
+
+
+
+.contacts .section.three .socmed.title p {
+
+
+    padding-inline: 10px;
+    padding-block: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.contacts .section.three .socmed.descriptions {
+
+display: flex;
+justify-content: center;
+margin-top: 20px;
+
+}
+
+.contacts .section.three .socmed.descriptions p {
+
+    text-align: center;
+
+}
+
+
+.contacts .section.three .socmed.content {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+gap: 10px;
+flex-wrap: wrap;
+
+
+}
+
+.contacts .section.three .socmed.content .placeholder {
+
+width: 230px;
+height: 230px;
+
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+border: 1px solid black;
+
+}
+
+.contacts .section.three .socmed.content .placeholder img {
+
+width: 100%;
+height: 80%;
+object-fit: cover;
+border-radius: 3px 3px 0 0;
+
+}
+
+.contacts .section.three .socmed.content .placeholder .title_bar {
+
+
+width: 100%;
+flex: 1;
+border-radius: 0 0 3px 3px;
+
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding-inline: 5px;
+justify-content: space-between;
+
+
+
+}
+
+.contacts .section.three .socmed.content .placeholder .title_bar p:nth-child(1) {
+
+
+font-weight: bold;
+font-size: 16px;
+}
+
+.contacts .section.three .socmed.content .placeholder .title_bar p:nth-child(2) {
+
+
+    border: 1px solid rgb(0, 0, 0);
+
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 5px;
+    }
+    
+
+
+@media (max-width: 960px) {
+
+.contacts .section.one .contact_description p {
+
+max-width: 100%;
+
+
+
+
+}
+
+
+
+.contacts .why_us_container {
+
+
+
+
+flex-direction: column;
+align-items: center;
+gap: 10px;
+
+
+}
+
+
+.contacts .response_time p {
+
+max-width: 100%;
+
+}
+
+.contacts .section.three .socmed.content {
+
+
+    
+}    
+
+.contacts .section.three .socmed.content .placeholder {
+
+
+
+}
+
+
+}

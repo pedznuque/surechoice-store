@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import "./App.css";
 import PromoBanner from "./components/PromoBanner";
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Store from "./components/Store";
 import About from "./components/About";

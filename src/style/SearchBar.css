@@ -1,0 +1,17 @@
+.search_bar {
+
+width: 100%;
+background-color: var(--primary-color);
+box-shadow: 1px 2px 5px rgb(129, 129, 129);
+display: flex;
+justify-content: center;
+
+}
+
+.search_bar .screen_limiter {
+
+max-width: var(--web-max-width);
+background-color: yellow;
+width: 100%;
+
+}

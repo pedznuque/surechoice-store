@@ -1,24 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import "./App.css";
-import PromoBanner from "./components/PromoBanner";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Store from "./components/Store";
 import About from "./components/About";
 import Contacts from "./components/Contacts";
+import Likes from "./components/Likes";
+import SearchBar from "./components/SearchBar";
 
 function App() {
+ 
+
   return (
-    <>
-      <PromoBanner />
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="store" element={<Store/>} />
-        <Route path="about" element={<About/>} />
-        <Route path="contacts" element={<Contacts/>} />
-      </Routes>
+      <>
+   
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="likes" element={<Likes />} />
+            <Route path="about" element={<About />} />
+            <Route path="contacts" element={<Contacts />} />
+          </Routes>
+          <NavBar />
+       
     </>
   );
 }

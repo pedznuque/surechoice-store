@@ -1,41 +1,82 @@
 import React from "react";
 import "../style/NavBar.css";
-import { FiShoppingBag } from "react-icons/fi";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoPersonCircleOutline } from "react-icons/io5";
-import { NavLink } from "react-router";
-import { useState } from "react";
+import { GrHomeRounded } from "react-icons/gr";
+import { HiOutlineHeart } from "react-icons/hi";
+import { IoMdTrendingUp } from "react-icons/io";
+import { LuShoppingCart } from "react-icons/lu";
+import { MdOutlineAccountCircle } from "react-icons/md";
+import { MdOutlineLeaderboard } from "react-icons/md";
+
+import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   const [toggle, setToggle] = useState(false);
 
+  const [bottomBar, setBottomBar] = useState(false);
+
+  const ProfileIcon = ({ size = 50, color = "blue" }) => (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="12" cy="8" r="4" fill={color} />
+      <path
+        d="M12 14c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z"
+        fill={color}
+      />
+    </svg>
+  );
+
+
+  useEffect(() => {
+    // Browser detection logic
+    const userAgent = navigator.userAgent;
+
+    if (
+      userAgent.includes("Firefox") ||
+      userAgent.includes("Edg") ||
+      userAgent.includes("Chrome")
+    ) {
+      setBottomBar(true);
+    } else {
+      setBottomBar(false); // Safari and Opera fall here
+    }
+  }, []);
+
   return (
     <>
-      <nav className={toggle && "toggled"}>
-        <div className="content_container">
-          <div className="content one">
-            <div className="brand_name">SureCHOICE</div>
-            <span onClick={() => setToggle(!toggle)}>
-              <GiHamburgerMenu />
-            </span>
-          </div>
-          <div className={`content two ${toggle && "toggled"}`}>
-            <NavLink to="/" onClick={() => setToggle(!toggle)} >HOME</NavLink>
-            <NavLink to="/store" onClick={() => setToggle(!toggle)} >STORE</NavLink>
-            <NavLink to="/about" onClick={() => setToggle(!toggle)} >ABOUT US</NavLink>
-            <NavLink to="/contacts" onClick={() => setToggle(!toggle)}>CONTACTS</NavLink>
-          </div>
-          <div className={`content three ${toggle && "toggled"}`}>
-            <div className="icon">
-              <abbr title="Cart">
-                <FiShoppingBag />
-              </abbr>
-              <span>CART</span>
-            </div>
-            <div className="profile_container">
-              <span><IoPersonCircleOutline /></span>
-              PROFILE
-            </div>
+      <nav className={bottomBar && "bottom"}>
+        <div className="screen_limiter">
+          <div className="navAction_limiter">
+            <NavLink to="/" className="navAction one">
+              <GrHomeRounded />
+
+              <p>Home</p>
+            </NavLink>
+            <NavLink to="likes">
+              <HiOutlineHeart />
+
+              <p>Likes</p>
+            </NavLink>
+            <NavLink to="trends">
+            <MdOutlineLeaderboard />
+
+              <p>Trends</p>
+            </NavLink>
+            <NavLink to="cart">
+              <LuShoppingCart />
+
+              <p>Cart</p>
+            </NavLink>
+            <NavLink to="account">
+            <MdOutlineAccountCircle />
+
+              <p>Account</p>
+            </NavLink>
           </div>
         </div>
       </nav>

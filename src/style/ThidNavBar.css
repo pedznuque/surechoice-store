@@ -1,0 +1,48 @@
+.thid_navbar {
+
+max-width: 900px;
+width: 100%;
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+.thid_navbar .brand_name {
+
+
+
+display: flex;
+align-items: center;
+font-weight: bold;
+font-size: 18px;
+
+}
+
+
+.thid_navbar .icon_container {
+
+
+
+display: flex;
+flex-direction: row;
+gap: 20px;
+
+}
+
+
+.thid_navbar .icon_container .container {
+
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 5px;
+
+}
+
+.thid_navbar .icon_container .container svg {
+
+    font-size: 22px;
+    
+    }

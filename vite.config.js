@@ -5,7 +5,12 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
 
-  base: "/surechoice-store"
+  server: {
+
+    host: "192.168.0.102",
+    port: 2001
+
+  }
   
 
 })

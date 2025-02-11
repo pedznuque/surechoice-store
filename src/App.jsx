@@ -8,6 +8,7 @@ import About from "./components/About";
 import Contacts from "./components/Contacts";
 import Likes from "./components/Likes";
 import SearchBar from "./components/SearchBar";
+import Account from "./components/Account";
 
 function App() {
  
@@ -19,7 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="likes" element={<Likes />} />
             <Route path="about" element={<About />} />
-            <Route path="contacts" element={<Contacts />} />
+            <Route path="account" element={<Account />} />
           </Routes>
           <NavBar />
        
